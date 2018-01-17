@@ -9,84 +9,82 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.example.android.HelloAndroid.MainActivity">
+        android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="@dimen/ViewMarginTop">
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#6c6c6c"
+                android:layout_height="@dimen/ViewHeight"
+                android:background="@color/line"
                 />
             <View
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="64dp"
-                android:layout_marginRight="64dp"
+                android:layout_marginTop="@dimen/ViewMarginTop"
+                android:layout_marginLeft="@dimen/ViewLeftMargin"
+                android:layout_marginRight="@dimen/ViewRightMargin"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#6c6c6c"
-                android:layout_marginBottom="16dp"
+                android:layout_height="@dimen/ViewHeight"
+                android:background="@color/line"
+                android:layout_marginBottom="@dimen/ViewMarginBottom"
                 />
         </RelativeLayout>
-
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Udacity"
+            android:text="@string/udacity"
             android:id="@+id/udacitytext"
             android:textAlignment="center"
-            android:textSize="32sp"
+            android:textSize="@dimen/HeaderSize"
             />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="@dimen/RelativeLayoutMarginBottom">
 
             <View
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="64dp"
-                android:layout_marginRight="64dp"
+                android:layout_marginTop="@dimen/ViewMarginTop"
+                android:layout_marginLeft="@dimen/ViewLeftMargin"
+                android:layout_marginRight="@dimen/ViewRightMargin"
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#6c6c6c"
+                android:layout_height="@dimen/ViewHeight"
+                android:background="@color/line"
                 android:id="@+id/view3"
                 />
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#6c6c6c"
+                android:layout_height="@dimen/ViewHeight"
+                android:background="@color/line"
                 android:layout_below="@+id/view3"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="@dimen/ViewMarginTop"
                 />
         </RelativeLayout>
         <ImageView
+            android:adjustViewBounds="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/udacity"/>
         <TextView
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/TextMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Udacity"/>
+            android:text="@string/udacity"/>
         <TextView
-            android:layout_marginLeft="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/TextMargin"
+            android:layout_marginBottom="@dimen/TextMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="650-555-5555"/>
+            android:text="@string/number"/>
         <TextView
-            android:layout_marginLeft="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/TextMargin"
+            android:layout_marginBottom="@dimen/TextMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="www.udacity.com"/>
+            android:text="@string/www_udacity_com"/>
         <TextView
-            android:layout_marginLeft="8dp"
+            android:layout_marginLeft="@dimen/TextMargin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2465 Latham St., Mountain View, CA 94043"/>
+            android:text="@string/_2465_latham_st_mountain_view_ca_94043"/>
     </LinearLayout>
 </ScrollView>
